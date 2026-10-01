@@ -1,0 +1,663 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Fukushima | Finance Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+            color: #263445;
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+
+        nav {
+            background-color: #142b45;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #80b7e5;
+        }
+
+        /* Introduction */
+
+        header {
+            background: linear-gradient(
+                135deg,
+                #142b45,
+                #285781
+            );
+            color: white;
+            text-align: center;
+            padding: 95px 20px;
+        }
+
+        header h1 {
+            font-size: 43px;
+            margin-bottom: 12px;
+        }
+
+        header h2 {
+            font-size: 19px;
+            font-weight: normal;
+            color: #c5d9ec;
+            margin-bottom: 25px;
+        }
+
+        header p {
+            max-width: 750px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 12px 25px;
+            background-color: white;
+            color: #142b45;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #dceaf7;
+        }
+
+        /* General Layout */
+
+        section {
+            max-width: 1050px;
+            margin: auto;
+            padding: 65px 25px;
+        }
+
+        section h2 {
+            font-size: 29px;
+            color: #142b45;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #3272a6;
+            padding-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+        }
+
+        /* Cards */
+
+        .card {
+            background-color: white;
+            padding: 28px;
+            margin-bottom: 22px;
+            border-radius: 9px;
+            box-shadow: 0 3px 12px
+                rgba(0, 0, 0, 0.06);
+        }
+
+        .card h3 {
+            color: #193e63;
+            margin-bottom: 8px;
+        }
+
+        .card h4 {
+            color: #64748b;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        /* Skills */
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px
+                rgba(0, 0, 0, 0.06);
+        }
+
+        .skill-box h3 {
+            color: #193e63;
+            margin-bottom: 15px;
+        }
+
+        .skill-box ul {
+            padding-left: 20px;
+        }
+
+        .skill-box li {
+            margin-bottom: 8px;
+        }
+
+        /* Projects */
+
+        .project {
+            border-left: 4px solid #3272a6;
+        }
+
+        .project ul {
+            padding-left: 22px;
+            margin-top: 12px;
+        }
+
+        .project li {
+            margin-bottom: 9px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e5eff8;
+            color: #193e63;
+            padding: 5px 11px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin: 10px 5px 5px 0;
+        }
+
+        /* Contact */
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #286ca5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+
+        footer {
+            background-color: #142b45;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+            nav {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            header {
+                padding: 65px 20px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 45px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <div class="logo">Matthew Fukushima</div>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- PERSONAL STATEMENT -->
+
+    <header>
+        <h1>Matthew Fukushima</h1>
+
+        <h2>
+            Finance & Economics Student |
+            Rutgers Business School
+        </h2>
+
+        <p>
+            I am a Finance and Economics student at
+            Rutgers Business School with a strong
+            foundation in financial analysis, investment
+            research, and financial modeling, seeking
+            opportunities to apply my analytical and
+            leadership skills in the financial services
+            industry.
+        </p>
+
+        <a href="#projects" class="button">
+            View My Projects
+        </a>
+    </header>
+
+    <!-- ABOUT ME -->
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="card">
+            <p>
+                I am currently pursuing a Bachelor of
+                Science in Finance and Economics at
+                Rutgers University - New Brunswick,
+                with an expected graduation date
+                of May 2028.
+            </p>
+
+            <p>
+                I maintain a 3.8 GPA and have earned
+                Dean's List honors every semester.
+                My academic background includes
+                Corporate Finance, Investment Analysis,
+                Financial Accounting, Financial
+                Management, and Statistical Methods
+                for Business.
+            </p>
+
+            <p>
+                Outside the classroom, I am involved
+                in the Corporate Finance Club and
+                Little Investment Bankers of Rutgers.
+                I have also completed Wall Street Prep
+                certifications in DCF Modeling
+                and Excel.
+            </p>
+
+            <p>
+                I am particularly interested in
+                investment analysis, corporate finance,
+                financial markets, and opportunities
+                that combine analytical work with
+                professional relationship building.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+        <h2>Technical & Professional Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-box">
+                <h3>Finance</h3>
+                <ul>
+                    <li>Financial Analysis</li>
+                    <li>Financial Modeling</li>
+                    <li>DCF Valuation</li>
+                    <li>Investment Research</li>
+                    <li>Portfolio Management</li>
+                    <li>Financial Accounting</li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Microsoft Excel</li>
+                    <li>Microsoft Office</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Statistical Analysis</li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h3>Professional Skills</h3>
+                <ul>
+                    <li>Leadership</li>
+                    <li>Team Collaboration</li>
+                    <li>Communication</li>
+                    <li>Problem Solving</li>
+                    <li>Time Management</li>
+                    <li>Customer Negotiation</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <!-- PROJECT 1 -->
+
+        <div class="card project">
+
+            <h3>
+                Personal Investment Portfolio
+            </h3>
+
+            <h4>
+                Equity Investing & Portfolio Management
+            </h4>
+
+            <p>
+                Independently managed a personal
+                investment portfolio, growing an
+                initial $692 investment from my
+                summer employment earnings to
+                approximately $1,300 through
+                investments in Apple, Broadcom,
+                Nvidia, and Palantir.
+            </p>
+
+            <ul>
+                <li>
+                    Researched publicly traded
+                    companies and evaluated
+                    investment opportunities
+                    within the technology sector.
+                </li>
+
+                <li>
+                    Allocated personal capital
+                    across four individual
+                    equities to pursue
+                    long-term capital appreciation.
+                </li>
+
+                <li>
+                    Monitored portfolio performance
+                    and market developments to
+                    inform investment decisions.
+                </li>
+
+                <li>
+                    Achieved approximately
+                    88% cumulative portfolio
+                    growth, increasing the
+                    initial investment from
+                    $692 to $1,300.
+                </li>
+            </ul>
+
+            <span class="tag">
+                Equity Research
+            </span>
+
+            <span class="tag">
+                Portfolio Management
+            </span>
+
+            <span class="tag">
+                Investment Analysis
+            </span>
+
+        </div>
+
+        <!-- PROJECT 2 -->
+
+        <div class="card project">
+
+            <h3>
+                Community Rummage Sale Fundraiser
+            </h3>
+
+            <h4>
+                Grace Lutheran Church |
+                2021 - 2024
+            </h4>
+
+            <p>
+                Co-led a community fundraising
+                initiative at Grace Lutheran
+                Church to generate charitable
+                contributions for Dover Faith
+                Kitchen through the sale of
+                donated merchandise.
+            </p>
+
+            <ul>
+                <li>
+                    Evaluated and priced donated
+                    merchandise to support
+                    fundraising objectives.
+                </li>
+
+                <li>
+                    Negotiated with customers
+                    and applied sales techniques
+                    to facilitate transactions.
+                </li>
+
+                <li>
+                    Assisted in advertising
+                    and promoting the event
+                    to attract community
+                    participation.
+                </li>
+
+                <li>
+                    Collaborated with other
+                    volunteers to coordinate
+                    the fundraiser and support
+                    its charitable mission.
+                </li>
+            </ul>
+
+            <span class="tag">
+                Pricing Strategy
+            </span>
+
+            <span class="tag">
+                Sales & Negotiation
+            </span>
+
+            <span class="tag">
+                Leadership
+            </span>
+
+            <span class="tag">
+                Community Engagement
+            </span>
+
+        </div>
+
+    </section>
+
+    <!-- EXPERIENCE -->
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+
+        <div class="card">
+
+            <h3>Roxiticus Golf Club</h3>
+
+            <h4>
+                Greenskeeper |
+                June 2022 - August 2026
+            </h4>
+
+            <p>
+                Worked as part of a team
+                responsible for maintaining
+                golf course grounds while
+                consistently meeting early
+                morning schedules and
+                operational deadlines.
+            </p>
+
+            <p>
+                Served as a liaison between
+                the grounds superintendent
+                and Spanish-speaking colleagues,
+                facilitating communication
+                and coordinating daily tasks
+                and projects.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Homeless Solutions</h3>
+
+            <h4>
+                Volunteer |
+                2022 - 2024
+            </h4>
+
+            <p>
+                Collected donated food,
+                prepared meals, and helped
+                serve dinner to approximately
+                50 shelter residents,
+                collaborating with other
+                volunteers to support
+                the local community.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CERTIFICATIONS -->
+
+    <section id="certifications">
+        <h2>Certifications & Achievements</h2>
+
+        <div class="card">
+
+            <h3>Certifications</h3>
+
+            <p>
+                Wall Street Prep -
+                DCF Modeling
+            </p>
+
+            <p>
+                Wall Street Prep -
+                Excel
+            </p>
+
+            <h3>Academic Achievements</h3>
+
+            <p>
+                Rutgers University -
+                Dean's List, All Semesters
+            </p>
+
+            <p>
+                AP Scholar with Distinction
+            </p>
+
+            <h3>Leadership & Athletics</h3>
+
+            <p>
+                Four-Year Letter Recipient
+                in Track and Cross Country,
+                Ridge High School
+            </p>
+
+            <p>
+                Group 4 Cross Country Champion,
+                2021
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            I welcome opportunities to connect
+            with professionals, recruiters,
+            and individuals interested in
+            finance and financial markets.
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:mattfuku05@gmail.com">
+                mattfuku05@gmail.com
+            </a>
+        </p>
+
+        <p>
+            Location: New Jersey
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>
+            &copy; 2026 Matthew Fukushima.
+            All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
